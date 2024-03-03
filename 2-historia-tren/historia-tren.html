@@ -25,57 +25,6 @@
             src: url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
         }
 
-        h3 {
-            font-family: "Playfair Display", serif;
-            color: #473843;
-
-        }
-
-        p {
-            font-family: "Goudy Bookletter 1911", serif;
-        }
-
-        a {
-            font-family: "Open Sans", sans-serif;
-            font-weight: bold;
-            text-decoration: none;
-            color: #04575C;
-        }
-
-        a:hover {
-            color: #6F9294;
-        }
-
-
-        header {
-            background-image: url(train2.jpg);
-            background-repeat: no-repeat;
-            background-position: left;
-            background-size: cover;
-            color: #ffffff;
-            padding: 20px;
-            text-align: left;
-            font-family: "Playfair Display", serif;
-        }
-
-        .header-links a {
-            font-family: "Open Sans", sans-serif;
-            font-weight: bold;
-            color: #ffffff;
-        }
-
-        .header-links a:hover {
-            color: #F2DAE9;
-
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            box-sizing: border-box;
-        }
-
         /*https://color.adobe.com/Menu-Blue-Triad-color-theme-2258927/*/
         /*Colores en RGBA y HSLA omitidos por funcionalidad*/
 
@@ -100,21 +49,81 @@
             color: #04575C;
         }
 
+        h1 {
+            font-family: "Playfair Display", serif;
+        }
+
+        h3 {
+            font-family: "Playfair Display", serif;
+            color: #473843;
+            margin-top: 70px;
+        }
+
+        p {
+            font-family: "Goudy Bookletter 1911", serif;
+        }
+
+        a {
+            font-family: "Open Sans", sans-serif;
+            font-weight: bold;
+            text-decoration: none;
+            color: #04575C;
+        }
+
+        a:hover {
+            color: #6F9294;
+        }
+
+        header {
+            background-image: url(train2.jpg);
+            background-repeat: no-repeat;
+            background-position: left;
+            background-size: cover;
+            color: #ffffff;
+            padding: 20px;
+            text-align: left;
+        }
+
+        .header-links a {
+            font-family: "Open Sans", sans-serif;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        .header-links a:hover {
+            color: #F2DAE9;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
         body {
             background-color: #F5EDC6;
         }
 
-
         article {
-            margin-bottom: 40px;
+            text-align: justify;
+            margin-bottom: 30px;
 
         }
 
-        .article img {
+        .article.img img {
             float: left;
+            margin-right: 10px;
+            width: 40%;
+            height: auto;
+        }
+
+        .article.img2 img {
+            float: right;
             margin-right: 10px;
             width: 35%;
             height: auto;
+            padding-left: 10px;
         }
     </style>
 
@@ -141,8 +150,9 @@
     <main class="container">
         <section>
 
-            <h3 id="capitulo1">Capítulo 1: ¿Qué es un tren?</h3>
+
             <article>
+                <h3 id="capitulo1">Capítulo 1: ¿Qué es un tren?</h3>
                 <p>Un tren es una serie de vehículos que puede ser arrastrado
                     por una locomotora o puede ser autopropulsado. Parte integrante de un ferrocarril
                     son las vías sobre las que discurren los trenes.</p>
@@ -167,15 +177,17 @@
                     vías lisas que no se partieran bajo su peso y a las que pudieran aferrarse las
                     ruedas. </p>
 
-                    <div style="text-align: center;">
-                        <img src="watt--boulton-steam-engine-17206.png" alt="Original steam machine" width=60% height=auto><br>
-                    </div>
+                <div style="text-align: center;">
+                    <img src="watt--boulton-steam-engine-17206.png" alt="Original steam machine"
+                        title="Primera máquina de vapor" width=60% height=auto><br>
+                </div>
                 <a href="#top">Volver al principio</a>
             </article>
 
-            <h3 id="capitulo3">Capítulo 3: Cómo funciona una locomotora de vapor</h3>
+
             <article class="article img">
-                <img src="litcoal.jpeg" alt="coal in fire">
+                <h3 id="capitulo3">Capítulo 3: Cómo funciona una locomotora de vapor</h3>
+                <img src="litcoal.jpeg" alt="coal in fire" title="Carbon ardiendo"><br>
                 <p>Todas las locomotoras de vapor se basan en los principios de
                     las primeras. </p>
                 <p>El fuego de carbón en el hogar calienta el agua de la caldera,
@@ -193,8 +205,9 @@
                 <a href="#top">Volver al principio</a>
             </article><br>
 
-            <h3 id="capitulo4">Capítulo 4: El tendido de una línea férrea</h3>
+
             <article>
+                <h3 id="capitulo4">Capítulo 4: El tendido de una línea férrea</h3>
                 <p>El tendido de una línea supone más trabajo del que podría imaginarse.
                     Como los trenes no pueden remontar cuestas muy pendientes, quizá la distancia
                     más corta entre dos puntos no sea la más fácil. </p>
@@ -212,8 +225,11 @@
                 <a href="#top">Volver al principio</a>
             </article>
 
-            <h3 id="capitulo5">Capítulo 5: Las vías</h3>
-            <article>
+
+            <article class="article img2">
+                <h3 id="capitulo5">Capítulo 5: Las vías</h3>
+                <img src="tracks.png" alt="Railway tracks" title="Vias de tren" width=30% height=auto>
+
                 <p>Las vías han sido decisivas en la historia de los trenes. Los
                     primeros carriles de hierro fundido se rompían fácilmente. Los carriles de hierro
                     fundido fueron reemplazados por otros de hierro forjado y a partir de 1870 se
@@ -227,6 +243,9 @@
                     entre los carriles se denomina ancho de vía y varía en todo el mundo. El ancho
                     estándar de vía en la mayoría de los países europeos y Estados Unidos es de
                     1.435 mm. Hay otras medidas mayores y menores que la estándar.</p>
+
+
+
                 <a href="#top">Volver al principio</a>
             </article>
 
