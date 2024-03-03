@@ -7,27 +7,114 @@
     <title>Historia del tren</title>
 
     <style>
-        h1 {
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        @font-face {
+            font-family: "Playfair Display", serif;
+            src: url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+            font-weight: 400;
+            font-style: normal;
+        }
 
+        @font-face {
+            font-family: "Open Sans";
+            src: url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+        }
+
+        @font-face {
+            font-family: "Goudy Bookletter 1911", serif;
+            ;
+            src: url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
         }
 
         h3 {
-            font-family: 'Courier New', Courier, monospace;
+            font-family: "Playfair Display", serif;
+            color: #473843;
+
         }
 
         p {
-            font-family: 'Times New Roman', Times, serif;
+            font-family: "Goudy Bookletter 1911", serif;
         }
 
-        li {
-            font-family: sans-serif;
+        a {
+            font-family: "Open Sans", sans-serif;
             font-weight: bold;
+            text-decoration: none;
+            color: #04575C;
         }
 
-        li a {
-            text-decoration: none;
+        a:hover {
+            color: #6F9294;
+        }
 
+
+        header {
+            background-image: url(train2.jpg);
+            background-repeat: no-repeat;
+            background-position: left;
+            background-size: cover;
+            color: #ffffff;
+            padding: 20px;
+            text-align: left;
+            font-family: "Playfair Display", serif;
+        }
+
+        .header-links a {
+            font-family: "Open Sans", sans-serif;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        .header-links a:hover {
+            color: #F2DAE9;
+
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /*https://color.adobe.com/Menu-Blue-Triad-color-theme-2258927/*/
+        /*Colores en RGBA y HSLA omitidos por funcionalidad*/
+
+        /* Color Theme Swatches in Hex */
+        .Triad-1-1-hex {
+            color: #473843;
+        }
+
+        .Triad-1-2-hex {
+            color: #F5EDC6;
+        }
+
+        .Triad-1-3-hex:hover {
+            color: #F2DAE9;
+        }
+
+        .Triad-1-4-hex {
+            color: #6F9294;
+        }
+
+        .Triad-1-5-hex {
+            color: #04575C;
+        }
+
+        body {
+            background-color: #F5EDC6;
+        }
+
+
+        article {
+            margin-bottom: 40px;
+
+        }
+
+        .article img {
+            float: left;
+            margin-right: 10px;
+            width: 35%;
+            height: auto;
         }
     </style>
 
@@ -36,9 +123,9 @@
 <body>
     <header id="top">
         <h1>Historia del tren</h1>
-        <p>La página dedicada a las personas que no quieren perder el tren</p>
+        <p><strong>Página dedicada a las personas que no quieren perder el tren</strong></p>
         <nav>
-            <ul>
+            <ul class="header-links">
                 <li><a href="#capitulo1">Capítulo 1</a></li>
                 <li><a href="#capitulo2">Capítulo 2</a></li>
                 <li><a href="#capitulo3">Capítulo 3</a></li>
@@ -50,7 +137,8 @@
 
 
 
-    <main>
+
+    <main class="container">
         <section>
 
             <h3 id="capitulo1">Capítulo 1: ¿Qué es un tren?</h3>
@@ -78,11 +166,16 @@
                     pesada carga y hacer tan poco ruido y humo como fuese posible. Exigían también
                     vías lisas que no se partieran bajo su peso y a las que pudieran aferrarse las
                     ruedas. </p>
+
+                    <div style="text-align: center;">
+                        <img src="watt--boulton-steam-engine-17206.png" alt="Original steam machine" width=60% height=auto><br>
+                    </div>
                 <a href="#top">Volver al principio</a>
             </article>
 
             <h3 id="capitulo3">Capítulo 3: Cómo funciona una locomotora de vapor</h3>
-            <article>
+            <article class="article img">
+                <img src="litcoal.jpeg" alt="coal in fire">
                 <p>Todas las locomotoras de vapor se basan en los principios de
                     las primeras. </p>
                 <p>El fuego de carbón en el hogar calienta el agua de la caldera,
@@ -98,7 +191,7 @@
                     vigilando el manómetro. El fogonero
                     ayudaba además al maquinista a observar las señales, sobre todo en las curvas.</p>
                 <a href="#top">Volver al principio</a>
-            </article>
+            </article><br>
 
             <h3 id="capitulo4">Capítulo 4: El tendido de una línea férrea</h3>
             <article>
@@ -141,14 +234,15 @@
         <aside>
             <h2>Links Relacionados</h2>
             <ul>
-                <li><a href="https://es.wikipedia.org/wiki/Tren" target="_blank">Wikipedia.org</a></li>
+                <li><a href="https://es.wikipedia.org/wiki/Tren" target="_blank">Wikipedia.org 'Tren'</a></li>
+                <li><a href="https://es.wikipedia.org/wiki/Thomas_Newcomen" target="_blank">Wikipedia.org 'Thomas
+                        Newcomen'</a></li>
+                <li><a href="https://es.wikipedia.org/wiki/James_Watt" target="_blank">Wikipedia.org 'James Watt'</a>
+                </li>
                 <li><a href="https://www.museodelferrocarril.org/" target="_blank">Museo del ferrocarril</a></li>
-                <li><a href="https://www.ngenespanol.com/historia/trenes-un-invento-revolucionario-con-historia-y-futuro/"
-                        target="_blank">National geographic España</a></li>
                 <li><a href="https://curiosfera-historia.com/historia-del-tren/" target="_blank">Curiosfera-historia</a>
                 </li>
-                <li><a href="https://aferioja.es/" target="_blank">Aferioja</a></li>
-
+                <li><a href="https://iwsteamrailway.co.uk/" target="_blank">IOW Steam train</a></li>
             </ul>
         </aside>
     </main>
