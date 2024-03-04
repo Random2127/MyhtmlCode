@@ -6,26 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leer a los clásicos</title>
 
-    <!--Creamos links a las fuentes de google-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap">
-
     <style>
-        @font-face {
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+        .container {
+            background-color: #f2f2f2;
+            padding: 20px;
+            margin: 0 auto;
+            width: 80%;
+        }
+
+        .centre {
+            text-align: center;
+        }
+
+        header {
             font-family: 'Lato', sans-serif;
-            src: local('Lato'), url(https://fonts.gstatic.com/s/lato/v22/S6uyw4BMUTPHjx4wXiWtFCc.woff2) format('woff2');
-            font-weight: 400;
-            font-style: normal;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            font-weight: bold;
         }
 
-        @font-face {
-            font-family: 'Merriweather', serif;
-            src: local('Merriweather'), url(https://fonts.gstatic.com/s/merriweather/v22/u-440qyriQwlOrhSvowK_l5-cZP1CKf3pBfs9VPU.woff2) format('woff2');
-            font-weight: 400;
-            font-style: normal;
-        }
-
-        /**/
         h1 {
             font-family: 'Lato', sans-serif;
             color: #c00000;
@@ -33,27 +34,15 @@
             font-weight: bold;
         }
 
-        .centre {
-            text-align: center;
+        h2 {
+            font-family: 'Lato', sans-serif;
+            font-size: small;
+            margin: 0;
         }
 
         h3 {
             font-family: 'Lato', sans-serif;
             color: #c00000;
-        }
-
-        .container {
-            background-color: #f2f2f2;
-            padding: 20px;
-            margin: 0 auto;
-            width: 80%;
-            /*max-width: 700px;*/
-        }
-
-        header {
-            font-family: 'Lato';
-            font-size: 8px;
-            font-weight: bold;
         }
 
         p {
@@ -65,7 +54,7 @@
             font-family: 'Lato';
             margin: 0;
             line-height: 1.5;
-            font-size: 8px;
+            font-size: 0.8rem;
         }
 
         .right {
@@ -77,24 +66,28 @@
         }
 
         .first-paragraph {
-            font-size: 15px;
-            line-height: 1.8;
+            font-size: 1.1rem;
+            line-height: 1.5;
             margin-top: 0;
         }
     </style>
+
 </head>
+
 
 <body>
 
     <div class="container">
+        <div class="centre">
+            <header>Tiempo recobrado</header>
 
-        <header class="centre">TIEMPO RECOBRADO</header>
 
-        <h1 class="centre">Por qué leer a los clásicos</h1>
+            <h1>Por qué leer a los clásicos</h1>
+        </div>
 
 
         <div class="top-bottom right">
-            <p class="blue-font">PEDRO G. CUARTANGO.</p>
+            <h2 class="blue-font">PEDRO G. CUARTANGO.</h2>
             <p>24/10/2016</p>
         </div>
 
@@ -170,6 +163,8 @@
         </footer>
 
     </div>
+
+
 </body>
 
 </html>
