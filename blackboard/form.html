@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!--This is an example of a form from the first book-->
+
+    <form action="/submit_form.php" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username"><br>
+        <hr>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br>
+        <hr>
+        <label for="phone">Type your phone number: </label>
+        <input type="tel" id="phone" name="phone"><br>
+        <hr>
+        <label for="email">What's your email: </label>
+        <input type="email" id="email" name="email"><br>
+        <hr>
+        <label for="date">Type your date of birth:</label>
+        <input type="date" id="birthdate" name="birthdate"><br>
+        <hr>
+        <p>This is a checkbox to click on every option that you like</p>
+        <label for="favfood">Click on your favourite food:</label><br>
+        <label>
+            <input type="checkbox" name="food" value="sushi">Sushi<br>
+        </label><br>
+        <label>
+            <input type="checkbox" name="food" value="pizza">Pizza<br>
+        </label><br>
+        <label>
+            <input type="checkbox" name="food" value="pasta">Pasta<br>
+        </label><br>
+        <hr>
+        <p>This is a checkbox 'type radio' which only allows one option</p>
+        <label for="gender">Click on yourt gender:</label><br>
+        <label>
+            <input type="radio" name="gender" value="male">Male
+        </label><br>
+        <label>
+            <input type="radio" name="gender" value="female">Female
+        </label><br>
+        <label>
+            <input type="radio" name="gender" value="other">Other
+        </label><br>
+        <hr>
+
+        <p>This is a space to write whatever you like, as a title for the box</p><br>
+        <label for="message">Enter your message:</label><br>
+
+        <!--Never leave space between opening and closing the textarea or you will have the second case-->
+        <textarea id="message" name="message" rows="4" cols="40" placeholder="Write your text here..."></textarea>
+        <input type="submit" value="Submit">
+
+        <!--
+        <textarea id="message" name="message" rows="4" cols="50">
+	    What you write here is what appears in the box...
+    	But you need to erase it by hand...
+        </textarea><br>
+        -->
+
+
+    </form>
+
+
+
+</body>
+
+</html>

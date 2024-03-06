@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Historia del tren</title>
   <style>
+    /*Importación de fuentes y estilos a usar*/
     @import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
     /* Color Theme Swatches in Hex */
@@ -29,33 +30,40 @@
       color: #F06060;
     }
 
+    /*Título en mayusulas y agrandado por estética*/
     h1 {
-      font-family: "Playfair Display", serif;
+      font-family: "Playfair Display", 'Times New Roman', Georgia, Garamond,serif;
       font-size: 2.5rem;
+      text-transform: uppercase;
     }
 
 
+    /*fuente y color de cabeceras de capitulos y margen apara dar mas 'aire'*/
     h3 {
-      font-family: "Playfair Display", serif;
+      font-family: "Playfair Display", 'Times New Roman', Georgia, Garamond,serif;
       color: #5C4B51;
-      margin-top: 70px;
+      margin-top: 50px;
     }
 
     p {
-      font-family: "Goudy Bookletter 1911", serif;
+      font-family: "Goudy Bookletter 1911", 'Times New Roman', Georgia, Garamond,serif;
     }
 
+    /*links sin subrayado y seleccionamos color*/
     a {
-      font-family: "Open Sans", sans-serif;
+      font-family: "Open Sans", Arial, Verdana, Helvetica, sans-serif;
       font-weight: bold;
       text-decoration: none;
       color: #8CBEB2;
     }
 
+    /*contraste de color al pasar ratón por encime del link*/
     a:hover {
       color: #F06060;
     }
 
+    /*Cabecera extendida en altura para pareciar la foto, atributos background para ubicarla 
+    donde quería exactamenete. Sombra al texto para "separarlo" de la foto*/
     header {
       background-image: url(train2.jpg);
       background-repeat: no-repeat;
@@ -68,7 +76,8 @@
       text-shadow: 7px 6px 2px black;
     }
 
-
+    /*elemento fijo a la izauierda para seleccionar capitulos, fijado a una altura que 
+    no solape texto y ajustado al tamaño del texto que aloja. redondeamos bordes*/
     aside {
       position: fixed;
       background-color: #5C4B51;
@@ -79,8 +88,9 @@
       top: 250px;
     }
 
+    /*fuente y colores de los links en la barra lateral*/
     .aside-links a {
-      font-family: "Open Sans", sans-serif;
+      font-family: "Open Sans", Arial, Verdana, Helvetica, sans-serif;
       font-weight: bold;
       color: #8CBEB2;
     }
@@ -89,11 +99,13 @@
       color: #F06060;
     }
 
+    /*contenedor del texto principal, ajustado para no ser solapado por barra lateral*/
     .container {
-      width: 70%;
+      width: 70vw;
       margin: 0 auto;
       padding: 20px;
       box-sizing: border-box;
+      max-width: 1000px;
     }
 
     body {
@@ -101,13 +113,14 @@
       margin: 0;
     }
 
-
+    /*justificamos texto y añadimos margen inferior para que las fotos encajen en su sección*/
     section {
       text-align: justify;
       margin-bottom: 30px;
 
     }
 
+    /*segunda imagen, posicionada a la izquierda*/
     .section.img img {
       float: left;
       margin-right: 10px;
@@ -115,6 +128,7 @@
       height: auto;
     }
 
+    /*tercera imagen, posicionada ala derecha*/
     .section.img2 img {
       float: right;
       margin-right: 10px;
@@ -128,9 +142,10 @@
 
 <body>
   <header id="top">
-    <h1 style="text-transform: uppercase;">Historia del tren</h1>
+    <h1>Historia del tren</h1>
     <p style="font-size: 1.4rem;"><strong>Página dedicada a las personas que no quieren perder el tren</strong></p>
   </header>
+  <!--Elemento lateral para selccionar los capitulos-->
   <aside>
     <nav>
       <ul class="aside-links">
@@ -145,7 +160,6 @@
 
 
   <main class="container">
-
 
 
     <section>
@@ -173,13 +187,13 @@
         pesada carga y hacer tan poco ruido y humo como fuese posible. Exigían también
         vías lisas que no se partieran bajo su peso y a las que pudieran aferrarse las
         ruedas. </p>
-        <a href="#top">Volver al principio</a>
+      <a href="#top">Volver al principio</a>
 
       <div style="text-align: center;">
         <img src="watt--boulton-steam-engine-17206.png" alt="Original steam machine" title="Primera máquina de vapor"
           width=50% height=auto><br>
       </div>
-      
+
     </section>
 
 
@@ -247,6 +261,7 @@
       <a href="#top">Volver al principio</a>
     </section>
 
+    <!--Pie donde guardamos los links relacionados-->
     <footer>
       <h2>Links Relacionados</h2>
       <ul>
