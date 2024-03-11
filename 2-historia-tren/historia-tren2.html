@@ -32,21 +32,25 @@
 
     /*Título en mayusulas y agrandado por estética*/
     h1 {
-      font-family: "Playfair Display", 'Times New Roman', Georgia, Garamond,serif;
+      font-family: "Playfair Display", 'Times New Roman', Georgia, Garamond, serif;
       font-size: 2.5rem;
       text-transform: uppercase;
+    }
+
+    h2 {
+      font-family: "Playfair Display", 'Times New Roman', Georgia, Garamond, serif;
     }
 
 
     /*fuente y color de cabeceras de capitulos y margen apara dar mas 'aire'*/
     h3 {
-      font-family: "Playfair Display", 'Times New Roman', Georgia, Garamond,serif;
+      font-family: "Playfair Display", 'Times New Roman', Georgia, Garamond, serif;
       color: #5C4B51;
       margin-top: 50px;
     }
 
     p {
-      font-family: "Goudy Bookletter 1911", 'Times New Roman', Georgia, Garamond,serif;
+      font-family: "Goudy Bookletter 1911", 'Times New Roman', Georgia, Garamond, serif;
     }
 
     /*links sin subrayado y seleccionamos color*/
@@ -79,7 +83,7 @@
     /*elemento fijo a la izauierda para seleccionar capitulos, fijado a una altura que 
     no solape texto y ajustado al tamaño del texto que aloja. redondeamos bordes*/
     aside {
-      position: fixed;
+      position: absolute;
       background-color: #5C4B51;
       padding: 15px;
       width: fit-content;
@@ -101,7 +105,7 @@
 
     /*contenedor del texto principal, ajustado para no ser solapado por barra lateral*/
     .container {
-      width: 70vw;
+      width: calc(100vw - 40px);
       margin: 0 auto;
       padding: 20px;
       box-sizing: border-box;
@@ -143,7 +147,7 @@
 <body>
   <header id="top">
     <h1>Historia del tren</h1>
-    <p style="font-size: 1.4rem;"><strong>Página dedicada a las personas que no quieren perder el tren</strong></p>
+    <h2 style="font-size: 1.4rem;"><strong>Página dedicada a las personas que no quieren perder el tren</strong></h2>
   </header>
   <!--Elemento lateral para selccionar los capitulos-->
   <aside>
