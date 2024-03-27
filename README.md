@@ -11,3 +11,9 @@ The folder contains others with projects and notes:
 
 - **Blackboard**
     - A folder where I save class notes (names are self-explanatory)
+
+- **ClassExercise**
+  - This is a folder where I keep homework 
+  - Also icons and images I will need in the coming projects
+  
+  - Finished selectores CSS (universal, class, id, contextual and attributes)

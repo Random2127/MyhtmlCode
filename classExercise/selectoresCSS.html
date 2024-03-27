@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores CSS</title>
+
+    <style>
+        /*1. VID clases y span*/
+        /*asterik is the universal selector. This apllies a property to every object in the DOC*/
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: sans-serif;
+        }
+
+        /*3.1 VID Agrupados, Contextuales y por Atributos*/
+        h1,
+        h2 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: gray;
+        }
+
+        p {
+            color: brown;
+
+        }
+
+        /*inside ASIDE to the p we assign */
+        aside p {
+            font-size: 0.8rem;
+        }
+
+        .primero {
+            font-weight: bold;
+            color: black;
+        }
+
+        .destacado {
+            margin: 50px;
+            text-align: center;
+            font-style: italic;
+        }
+
+        .resaltado {
+            font-weight: bold;
+            color: forestgreen;
+
+        }
+
+        /*2. VID identificadores*/
+        #ultimo {
+            font-style: italic;
+            margin: 30px;
+            color: blue;
+        }
+
+        /*3.2 VID Agrupados, Contextuales y por Atributos*/
+        a {
+            color: coral;
+        }
+
+        /*Only anchors wirth this attribute*/
+        a[target] {
+            background: yellow;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Selectores CSS</h1>
+    <p>
+        <a href="#">one</a>
+        <a href="#">two</a>
+        <a href="#" target="_blank">three</a>
+        <a href="#">four</a>
+        <a href="#" target="_blank">five</a>
+    </p>
+    <!--article>h2+p*6>lorem-->
+
+    <article>
+        <h2>Titular del Article</h2>
+        <p class="primero">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae ea dicta laborum iusto
+            sed obcaecati,
+            amet praesentium cupiditate dolorem repellendus ad, minima, suscipit nesciunt! Eius laudantium minima
+            excepturi rem! Assumenda?</p>
+        <!--span doesn't build a block. inline tag-->
+        <p>Sequi sapiente <span class="resaltado"> similique aliquid sunt suscipit odio, velit repellendus asperiores
+                amet culpa quibusdam ea
+                unde quo illum</span>, nobis dolorum, et qui soluta tempore natus voluptate. Magnam nostrum aperiam nam
+            maxime.</p>
+        <p>Nulla maxime ipsa blanditiis labore beatae necessitatibus minima, molestiae, non odio possimus quasi fugiat?
+            Tenetur provident eum consectetur officia rerum, architecto vitae repellat omnis! Laboriosam expedita nulla
+            beatae ex modi.</p>
+        <p>Nam itaque necessitatibus fugit odio, libero ut minus ab consequatur, blanditiis, est explicabo ratione quam.
+            Alias minima molestias ducimus animi provident? Deleniti esse sapiente accusamus placeat, omnis labore.
+            Ducimus, error.</p>
+        <p class="destacado">Impedit mollitia facere hic reprehenderit corrupti voluptatem vel nulla dolorem ex labore,
+            sint asperiores,
+            ipsa fugiat. Consequuntur corrupti ut ad harum magnam corporis maiores! Odit tempora molestias aliquid ipsa
+            voluptates?</p>
+        <p>Ratione nostrum hic officiis dolor magni optio ullam consequuntur maiores! Laudantium error voluptatum
+            consectetur a voluptas doloribus officiis expedita fugiat iure in quisquam eius assumenda ut id, fugit
+            sequi. Ipsa?</p>
+    </article>
+
+    <aside>
+        <h2>
+            <pclass="primero">Lorem, ipsum dolor <span class="resaltado"> sit amet consectetur adipisicing elit. Est
+                    consectetur iure eveniet
+                    eos. Iure sapiente
+                    repellendus itaque tempore laborum quo</span>, cum vero laboriosam fugit doloremque sed consequatur,
+                natus
+                necessitatibus ullam!</p>
+                <p>Vitae rerum, suscipit eligendi reiciendis, accusamus sapiente et aliquid dolorum perferendis nihil
+                    est
+                    dignissimos enim ducimus! Accusantium id mollitia ab optio quos, earum maiores odit ipsum quam nemo
+                    alias officia.</p>
+                <p>Tempore explicabo id, exercitationem soluta quos placeat eius quas. Nihil doloremque recusandae
+                    adipisci
+                    voluptatem magni dignissimos nam voluptatum illum facilis distinctio. Culpa nam provident corporis
+                    officiis eligendi. Eos, cum id.</p>
+                <p class="destacado">Blanditiis eveniet harum quaerat impedit, at sunt cum quibusdam doloribus nisi
+                    maiores officiis odit
+                    voluptates earum nam accusantium, perspiciatis eos voluptatum enim placeat sequi exercitationem
+                    veritatis inventore nulla. Quas, commodi.</p>
+                <p id="ultimo">Ipsum ipsa accusamus voluptas perferendis commodi. Corporis tenetur rem libero pariatur.
+                    Alias ea,
+                    tempora quae eaque nostrum vel ex! Repellat esse illo laudantium saepe est eveniet animi unde
+                    consequatur quae?</p>
+        </h2>
+    </aside>
+</body>
+
+</html>
