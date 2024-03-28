@@ -14,10 +14,10 @@ The folder contains others with projects and notes:
   - Also icons and images I will need in the coming projects
   
   - Finished "selectores CSS" (universal, class, id, contextual and attributes)
-  - Finished "Flujo" just making boxes and understandign 'float'
+  - Finished "Flujo" just making boxes and understanding 'float'
+  - Finished "Filas" understanding the idea of rows and use of oveflow
 
 TO DO
-- Filas
 - Columnas
 - Position and Z-index
 - 

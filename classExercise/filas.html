@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        #a,
+        #b,
+        #c,
+        #d,
+        #e,
+        #f,
+        #g,
+        #h {
+            background: cornflowerblue;
+            margin: 0 20px 20px 0;
+            /*to avoid duplicity only right and bottom margins*/
+            font: 3rem Impact bold;
+            color: ghostwhite;
+            padding: 30px;
+        }
+
+        #a,
+        #h {
+            width: 1180px;
+            height: 150px;
+        }
+
+        #b,
+        #c,
+        #d,
+        #e,
+        #f,
+        #g {
+            width: 380px;
+            float: left;
+        }
+
+        .fila {
+            overflow: hidden;
+            /*elements wont overlap*/
+        }
+
+        #c,
+        #d {
+            height: 300;
+        }
+
+        #c img {
+            max-width: 100%;
+            max-height: 100%;
+            margin: auto;
+        }
+
+        #b,
+        #g {
+            height: 240px;
+            background: rebeccapurple;
+        }
+
+        #e {
+            height: 200px;
+            background: slategrey;
+        }
+
+        .container {
+            width: 1200px;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Flujo vertical y horizontal</h1>
+        <!--4 div's flow vertically and two divs haveu elements flow horizontally 'fila'-->
+
+        <div id="a">A</div>
+
+        <div class="fila">
+            <!--This is the block of three horizontal-->
+            <div id="b">B</div>
+            <div id="c">
+                <img src="images/Filas.png" alt="exercise screeshot">
+            </div>
+            <div id="d">D</div>
+        </div>
+
+        <div class="fila">
+            <div id="e">E</div>
+            <div id="f">F</div>
+            <div id="g">G</div>
+
+        </div>
+        <div id="h">H</div>
+    </div>
+
+
+</body>
+
+</html>
