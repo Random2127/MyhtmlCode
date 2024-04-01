@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            background: burlywood;
+            font: 4rem Impact bold;
+            color: darkcyan;
+            padding: 30px;
+            float: left;
+        }
+
+        article {
+            overflow: hidden;
+            width: 660px;
+            margin: auto;
+        }
+
+        #e {
+            background: green;
+            position: relative;
+            /*The position will be relative to normal flow*/
+            bottom: 40px;
+            /*From where it pushes. also top*/
+            left: 50px;
+            /*from where it pushes. also left*/
+            z-index: 6;
+            /*Try with E and G z-index values*/
+        }
+
+        /*Objects will go from bottom to top in ASC order. To avoid this we use z-index
+        When using z-index the higher the number the higher on top*/
+
+
+        #h {
+            background: purple;
+            position: absolute;
+            /*Will be positioned at top-left of container*/
+            top: 30px;
+            left: 150px;
+        }
+
+        #g {
+            background: yellow;
+            position: fixed;
+            /*Fixed to the browser window. Moves with the scroll*/
+            top: 120px;
+            right: 200px;
+            z-index: 5;
+        }
+    </style>
+</head>
+
+<body>
+    <article>
+        <div id="a">A</div>
+        <div id="b">B</div>
+        <div id="c">C</div>
+        <div id="d">D</div>
+        <div id="e">E</div>
+        <div id="f">F</div>
+        <div id="g">G</div>
+        <div id="h">H</div>
+        <div id="i">I</div>
+    </article>
+
+
+</body>
+
+</html>
