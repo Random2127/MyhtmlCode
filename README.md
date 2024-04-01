@@ -16,9 +16,9 @@ The folder contains others with projects and notes:
   - Finished "selectores CSS" (universal, class, id, contextual and attributes)
   - Finished "Flujo" just making boxes and understanding 'float'
   - Finished "Filas" understanding the idea of rows and use of oveflow
+  - Finished "Columnas" to review flow of columns and rows
 
 TO DO
-- Columnas
 - Position and Z-index
 - 
 
