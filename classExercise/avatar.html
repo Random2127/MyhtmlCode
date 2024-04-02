@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avatar</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .ficha {
+            width: 400px;
+            border: 4px gray solid;
+        }
+
+        .fondo {
+            background: url(images/gitsCity1995.jpg);
+            background-size: cover;
+            padding: 10px;
+            color: aliceblue;
+        }
+
+        .avatar img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            /*This cuts the image without losing shape*/
+            border-radius: 50%;
+            /*This makes a perfect circle*/
+            border: 6px rgb(133, 39, 221) solid;
+            box-shadow: -3px 5px 5px grey;
+        }
+
+        .avatar {
+            text-align: center;
+            /*this sets the picture in the centre*/
+            position: relative;
+            /*relative to starting position*/
+            top: 80px;
+            /*moving pic downwards*/
+        }
+
+        .text {
+            padding: 70px 10px 10px 10px;
+            /*This is done to have space for the pic*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ficha">
+        <div class="fondo">
+            <h2>Motoko Kusanagi</h2>
+            <div class="avatar">
+                <img src="images/motoko.jpg" alt="Motoko">
+            </div>
+        </div>
+        <div class="text">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti sed alias quisquam qui omnis cum?
+                Odio, perferendis nostrum eligendi excepturi inventore, quae blanditiis ullam nesciunt provident iusto
+                itaque unde ratione?</p>
+            <p>Aperiam possimus dolor saepe id commodi accusantium blanditiis molestias quibusdam animi hic quaerat
+                inventore minus et nisi tempora ea illum aliquid a autem eum dolorum, tenetur quo excepturi ipsam.
+                Velit?</p>
+            <p>Beatae voluptates praesentium exercitationem aliquid deserunt harum expedita incidunt eos, cupiditate
+                eaque quia obcaecati modi, distinctio, illo possimus explicabo. Maxime, distinctio. Tempora, dicta
+                dignissimos quod architecto vel ipsam assumenda dolorem.</p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

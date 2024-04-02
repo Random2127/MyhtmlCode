@@ -17,8 +17,10 @@ The folder contains others with projects and notes:
   - Finished "Flujo" just making boxes and understanding 'float'
   - Finished "Filas" understanding the idea of rows and use of oveflow
   - Finished "Columnas" to review flow of columns and rows
+  - Position and Z-index
+  - Avatar exercise finished. pics updates too
 
 TO DO
-- Position and Z-index
-- 
+- working with tables 
+- playing with table format 2 and more stuff 
 
