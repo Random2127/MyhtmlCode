@@ -19,7 +19,9 @@ The folder contains others with projects and notes:
   - Finished "Columnas" to review flow of columns and rows
   - Position and Z-index
   - Avatar exercise finished. pics updates too
-
+  - Added two exercises to present as classwork. "cajas" and "form"
+  
+  
 TO DO
 - working with tables 
 - playing with table format 2 and more stuff 

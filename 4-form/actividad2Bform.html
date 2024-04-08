@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font: 1.1rem Impact;
+            color: white;
+        }
+
+        form {
+            width: 600px;
+            margin: auto;
+            background-color: rgb(23, 23, 168);
+        }
+
+        .datos {
+            width: 400px;
+            color: black;
+        }
+
+        .mail {
+            width: 90px;
+            color: black;
+        }
+
+        .phone {
+            width: 300px;
+            color: black;
+        }
+
+        textarea {
+            color: black;
+        }
+
+        .boton {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <form method="post" action="http://www.cursos-diseno.es/mi-mail.php">
+
+        <p>Rellene todos los datos. Le responderemos lo antes posible</p>
+
+        <table>
+            <tr>
+                <td>Nombre</td>
+                <td><input type="text" name="nombre" class="datos"></td>
+            </tr>
+            <tr>
+                <td>Apellidos</td>
+                <td><input type="text" name="apellidos" class="datos"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="text" name="email" class="mail"></td>
+            </tr>
+            <tr>
+                <td>Teléfono</td>
+                <td><input type="text" name="telefono" class="phone"></td>
+            </tr>
+            <tr>
+                <td>Mensaje</td>
+                <td><textarea name="mensaje" rows="4" cols="30" placeholder="Introduzca su mensaje..."></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" name="send" value="Enviar" class="boton" />
+                    <input type="hidden" name="destinatario" value="vmedina1978@gmail.com" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

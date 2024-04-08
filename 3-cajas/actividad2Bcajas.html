@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cajas</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        #a,
+        #b,
+        #c,
+        #d,
+        #e,
+        #f,
+        #g {
+            background: burlywood;
+            margin: 0 20px 20px 0;
+            font: 2rem Impact bold;
+            color: darkcyan;
+            padding: 10px;
+        }
+
+        .container {
+            width: 1020px;
+            margin: auto;
+        }
+
+        #a,
+        #g {
+            width: 1000px;
+            height: 60px;
+        }
+
+        #b {
+            width: 1000px;
+            height: 180px;
+        }
+
+        .left {
+            float: left;
+        }
+
+        .right {
+            float: left;
+        }
+
+        .fila {
+            overflow: hidden;
+
+        }
+
+        #c {
+            width: 800px;
+            height: 60px;
+        }
+
+        #d {
+            width: 800px;
+            height: 520px;
+        }
+
+        #e,
+        #f {
+            width: 180px;
+            height: 180px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div id="a">A</div>
+        <div id="b">B</div>
+
+        <div class="fila">
+
+            <div class="left">
+                <div id="c">C</div>
+                <div id="d">D</div>
+            </div>
+
+            <div class="right">
+                <div id="e">E</div>
+                <div id="f">F</div>
+            </div>
+        </div>
+
+        <div id="g">G</div>
+    </div>
+
+</body>
+
+</html>
