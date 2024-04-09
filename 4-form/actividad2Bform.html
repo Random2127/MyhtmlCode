@@ -8,66 +8,84 @@
     <style>
         * {
             box-sizing: border-box;
-            font: 1.1rem Impact;
-            color: white;
+            font: 1rem "FreeSans", sans-serif;
+            color: black;
+            margin: auto;
         }
 
         form {
             width: 600px;
-            margin: auto;
-            background-color: rgb(23, 23, 168);
+            padding: 30px;
+            background-color: #2369B3;
         }
 
+        /*Determinamos los tamaños de las cajas*/
         .datos {
-            width: 400px;
-            color: black;
+            width: 300px;
         }
 
         .mail {
             width: 90px;
-            color: black;
         }
 
         .phone {
-            width: 300px;
-            color: black;
+            width: 200px;
         }
 
         textarea {
-            color: black;
+            width: 100%;
         }
 
         .boton {
             color: black;
         }
+
+        /*Indicamos el color blanco a las etiquetas, usamos display para que "Mensaje" quede arriba y alineamos a la derecha */
+        .label {
+            color: white;
+            display: block;
+            text-align: right;
+        }
+
+        /*Alineamos al centro y determinamos color*/
+        p {
+            color: white;
+            text-align: center;
+        }
     </style>
 </head>
+
+
+
+<!--WHAT ABOUT USING LABELS AND SO POSITIONS AND COLOURS IN SUCH WAY!?!?!?!??!-->
+
 
 <body>
     <form method="post" action="http://www.cursos-diseno.es/mi-mail.php">
 
-        <p>Rellene todos los datos. Le responderemos lo antes posible</p>
+        <p>Rellene todos los datos. Le responderemos lo antes posible</p><br>
 
+        <!--Todos los campos utilizan 'required' ya que el enunciado indica rellenar todos los datos-->
         <table>
             <tr>
-                <td>Nombre</td>
-                <td><input type="text" name="nombre" class="datos"></td>
+                <td class="label">Nombre</td>
+                <td><input type="text" name="nombre" class="datos" autofocus required></td>
             </tr>
             <tr>
-                <td>Apellidos</td>
-                <td><input type="text" name="apellidos" class="datos"></td>
+                <td class="label">Apellidos</td>
+                <td><input type="text" name="apellidos" class="datos" required></td>
             </tr>
             <tr>
-                <td>Email</td>
-                <td><input type="text" name="email" class="mail"></td>
+                <td class="label">E-mail</td>
+                <td><input type="text" name="email" class="mail" required></td>
             </tr>
             <tr>
-                <td>Teléfono</td>
-                <td><input type="text" name="telefono" class="phone"></td>
+                <td class="label">Teléfono</td>
+                <td><input type="text" name="telefono" class="phone" required></td>
             </tr>
             <tr>
-                <td>Mensaje</td>
-                <td><textarea name="mensaje" rows="4" cols="30" placeholder="Introduzca su mensaje..."></textarea></td>
+                <td class="label">Mensaje</td>
+                <td><textarea name="mensaje" class="complete" rows="5" required></textarea></td>
             </tr>
             <tr>
                 <td></td>
